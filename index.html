@@ -7,7 +7,7 @@
 <meta name="description" content="Excursão Réveillon 2027 em Xingó e Piranhas, Réveillon em Lisboa e Maratona de Santiago. Parcelamento sem juros e atendimento pelo WhatsApp. Correiatur Viagens e Turismo – Aracaju/SE.">
 <meta property="og:title" content="Correiatur – Viajar é viver">
 <meta property="og:description" content="Pacotes e excursões com saída de Aracaju. Veja os destinos e garanta sua vaga.">
-<meta property="og:image" content="https://mk6-corporation.github.io/correiatur/img/og.jpg">
+<meta property="og:image" content="img/og.jpg">
 <link rel="icon" href="img/icone-128.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -174,9 +174,10 @@ h2{font-size:clamp(2rem,4.5vw,3rem);color:var(--azul-esc)}
 .clientes h2{color:#fff}
 .clientes .sec-head p{color:rgba(255,255,255,.75)}
 .grupo-destaque{position:relative;border-radius:20px;overflow:hidden;margin-bottom:14px;box-shadow:0 20px 50px rgba(0,0,0,.35);cursor:zoom-in}
-.grupo-destaque img{width:100%;aspect-ratio:4/3;max-height:620px;object-fit:cover;object-position:center 40%}
+.grupo-destaque img{width:100%;aspect-ratio:4/3;max-height:640px;object-fit:cover;object-position:center 25%}
 .grupo-destaque figcaption{position:absolute;left:0;right:0;bottom:0;padding:48px 24px 20px;background:linear-gradient(transparent,rgba(5,30,60,.9));font-family:"Barlow Condensed";font-size:clamp(1.3rem,3vw,1.9rem);font-weight:700;pointer-events:none}
 .grupo-destaque figcaption span{display:block;font:500 .95rem "Barlow";opacity:.85}
+@media (max-width:640px){.grupo-destaque figcaption{position:static;background:var(--laranja);padding:14px 18px}.grupo-destaque figcaption span{opacity:.95}}
 .galeria{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:250px;gap:14px}
 .galeria figure{border-radius:14px;overflow:hidden;position:relative;cursor:zoom-in;background:rgba(255,255,255,.06)}
 .galeria figure.grande{grid-column:span 2;grid-row:span 2}
@@ -517,9 +518,9 @@ fieldset.campo{border:0}
       <h2>Grupos que já viajaram com a Correiatur</h2>
       <p>Do embarque ao retorno, acompanhamos cada grupo de perto. Cada foto é uma história que ajudamos a viver.</p>
     </div>
-    <!-- FOTO PRINCIPAL: salve a foto do grupo no aeroporto como img/clientes/grupo-destaque.jpg -->
+    <!-- FOTO PRINCIPAL: grupo no embarque -->
     <figure class="grupo-destaque" onclick="document.querySelector('#lightbox img').src=this.querySelector('img').src;document.querySelector('#lightbox').classList.add('aberto')">
-      <img src="img/clientes/grupo-destaque.jpg" alt="Grupo de clientes com a bandeira da Correiatur no embarque do aeroporto" onerror="this.closest('figure').hidden=true">
+      <img src="img/clientes/grupo-destaque.webp" loading="lazy" alt="Grupo de clientes com a bandeira da Correiatur no embarque do aeroporto" onerror="this.closest('figure').hidden=true">
       <figcaption>Embarque de grupo Correiatur<span>Nossa equipe acompanha você desde o aeroporto.</span></figcaption>
     </figure>
     <div class="galeria">
